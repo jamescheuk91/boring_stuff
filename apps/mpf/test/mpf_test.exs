@@ -1,8 +1,4 @@
-defmodule MpfTest do
+defmodule MPFTest do
   use ExUnit.Case
-  doctest Mpf
-
-  test "greets the world" do
-    assert Mpf.hello() == :world
-  end
+  doctest MPF
 end

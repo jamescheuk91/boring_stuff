@@ -21,3 +21,5 @@ erl_crash.dump
 
 # ElixirLS Elixir support and debugger extension for code editor.
 .elixir_ls
+
+performance_summaries_31_12_2018.csv

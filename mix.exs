@@ -16,6 +16,8 @@ defmodule BoringStuff.Umbrella.MixProject do
   #
   # Run "mix help deps" for examples and options.
   defp deps do
-    []
+    [
+      {:ex_unit_notifier, "~> 0.1", only: :test}
+    ]
   end
 end

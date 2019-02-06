@@ -8,6 +8,5 @@ defmodule MPF do
 
   """
   def gather_data do
-
   end
 end

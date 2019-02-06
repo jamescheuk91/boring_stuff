@@ -9,16 +9,16 @@ defmodule MPF.Application do
     case Code.ensure_loaded(ExSync) do
       {:module, ExSync = mod} ->
         mod.start()
+
       {:error, :embedded} ->
         :ok
+
       {:error, :nofile} ->
         :ok
     end
 
     # List all child processes to be supervised
-    children = [
-
-    ]
+    children = []
 
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options

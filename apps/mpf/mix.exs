@@ -12,7 +12,13 @@ defmodule MPF.MixProject do
       elixir: "~> 1.7",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      preferred_cli_env: [
+        vcr: :test,
+        "vcr.delete": :test,
+        "vcr.check": :test,
+        "vcr.show": :test
+      ]
     ]
   end
 
@@ -53,9 +59,13 @@ defmodule MPF.MixProject do
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
       # {:sibling_app_in_umbrella, in_umbrella: true},
       {:exsync, "~> 0.2.3", only: :dev},
+      {:mix_test_watch, "~> 0.8", only: :dev, runtime: false},
+      {:exvcr, "~> 0.10", only: :test},
+      {:csv, "2.1.1"},
       {:floki, "~> 0.20.0"},
       {:httpoison, "~> 1.5"},
-      {:html5ever, "~> 0.6.1"},
+      {:html5ever, "~> 0.7.0"},
+      {:typed_struct, "~> 0.1.4"}
     ]
   end
 end

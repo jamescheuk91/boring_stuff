@@ -22,3 +22,5 @@ erl_crash.dump
 # Ignore package tarball (built via "mix hex.build").
 mpf-*.tar
 
+# vcr test fixture 
+test/fixture/vcr_cassettes

@@ -29,3 +29,10 @@
 
 #### Install Hex
     $ mix local.hex
+
+#### Running test 
+    $ mix test
+    $ mix test --stale --listen-on-stdin --trace --seed 0
+    $ mix test.watch
+    $ mix test.watch --stale --trace --seed 0
+    $ mix cmd --app some_app mix test.watch 
